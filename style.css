@@ -1,0 +1,189 @@
+:root {
+    --cor-primaria: #351c75;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.cabecalho-bg {
+    height: 400px;
+    background: url('./imgs/bg.jpg') bottom / cover no-repeat;
+    background-attachment: fixed;
+
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    padding: 20px;
+}
+
+.cabecalho img {
+    border-radius: 10px;
+    max-width: 200px;
+}
+
+.cabecalho h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--cor-primaria);
+}
+
+.cabecalho p {
+    color: #f1c232;
+    text-align: center;
+    font-weight: 800;
+}
+
+.missao {
+    display: flex;
+    justify-content: center;
+    background-color: #fafafa;
+}
+
+.missao p {
+    font-family: "Bitter", serif;
+    padding: 20px;
+    font-size: 1.75rem;
+    max-width: 30ch;
+    text-align: center;
+    font-weight: 700;
+    color: #212121;
+}
+
+.assistencia h1 {
+    padding-bottom: 20px;
+}
+
+.servicos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.servicos article {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.servicos article img {
+    max-width: 160px;
+}
+
+.servicos-texto {
+    max-width: 25ch;
+}
+
+.servicos-texto h2 {
+    font-size: 1.25rem;
+    color: #3367d6;
+    padding: 20px 0;
+}
+
+.servicos-texto p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #202124;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#responseMessage {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Estilos para telas menores */
+
+@media only screen and (max-width: 800px) {
+    .container {
+        max-width: 100%;
+        margin: 20px;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cabecalho img {
+        max-width: 150px;
+    }
+
+    .cabecalho h1 {
+        font-size: 2.5rem;
+    }
+
+    .cabecalho p {
+        font-size: 1.2rem;
+    }
+
+    .servicos {
+        grid-template-columns: 1fr;
+    }
+
+    .servicos article {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .servicos article img {
+        max-width: 100px;
+    }
+
+    .servicos-texto {
+        max-width: none;
+    }
+}

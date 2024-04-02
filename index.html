@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Inicial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho-bg"></div>
+        <div class="cabecalho">
+            <img src="imgs/Logo.jpg" alt="">
+            <div class="cabecalho-texto">
+                <h1>Arruda's Informática</h1>
+                <p>Seu equipamento em boas mãos</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="missao">
+            <p>"Nossa Missão é ajudar as pessoas interagirem com as tecnologias de uma maneira satisfatória e harmônica"
+            </p>
+        </section>
+
+        <section class="servicos">
+            <article>
+                <img src="imgs/formatar.jpg" alt="">
+                <div class="servicos-texto">
+                    <h2>Formatação Desktop e Notebooks</h2>
+                    <p>
+                        Depois de algum tempo de uso, um processo indicado para otimizar o desempenho do PC é a formatar
+                        o computador. De maneira geral, formatar o PC com Windows é um jeito de renovar completamente o
+                        sistem operacional e, por isso, o procedimento é indicado como solução de diversos problemas e
+                        desktops e notebooks.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <img src="imgs/substituir.jpeg" alt="">
+                <div class="servicos-texto">
+                    <h2>Substituição de Hardware</h2>
+                    <p>
+                        Depois de algum tempo de uso, um processo indicado para otimizar o desempenho do PC é a formatar
+                        o computador. De maneira geral, formatar o PC com Windows é um jeito de renovar completamente o
+                        sistem operacional e, por isso, o procedimento é indicado como solução de diversos problemas e
+                        desktops e notebooks.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <img src="imgs/consultoria.jpg" alt="">
+                <div class="servicos-texto">
+                    <h2>Consultoria em TI</h2>
+                    <p>
+                        Uma consultoria de TI é uma empresa especializada na prestação de serviços de tecnologia da
+                        informação. Eles ajudam as organizações a melhorar a eficiência operacional, reduzir custos,
+                        aumentar a
+                        produtividade e proteger as informa-ções confidenciais.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <img src="imgs/segurança.jpg" alt="">
+                <div class="servicos-texto">
+                    <h2>Segurança da Informação</h2>
+                    <p>
+                        O principal objetivo da segurança em TI é proteger os recursos mais valiosos de um negócio, que
+                        são seus dados e as suas operações. Afinal, quando qualquer um desses aspectos é comprometido, a
+                        organização está em risco.
+                </div>
+            </article>
+        </section>
+
+        <section class="assistencia container">
+            <h1>Solicitar Orçamento</h1>
+            <form id="serviceForm">
+                <label for="name">Nome:</label>
+                <input type="text" id="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="dispositivo">Dispositivo:</label>
+                <select id="dispositivo" required>
+                    <option value="desktop">Desktop</option>
+                    <option value="notebook">Notebook</option>
+                </select>
+                <label for="modelo">Modelo:</label>
+                <input type="text" id="modelo" required>
+                <label for="problema">Problema:</label>
+                <textarea id="problema" rows="4" required></textarea>
+                <button type="submit" id="enviar">Enviar Solicitação</button>
+            </form>
+            <div id="responseMessage"></div>
+        </section>
+        
+        
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
